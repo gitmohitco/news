@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS APPLICATION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=160&id=0hL1XXinNxFc&format=png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo"><p>NEWS</p></div>
+        <div class="list">
+            <ul>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">NewsToday</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Lastest</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 id="head">News Update Daily</h1>
+    <div class="news-sec">
+        <div class="filter">
+            <div class="search">
+                <input type="search" placeholder="Search News.." id="searchInput"/>
+                <button id="sbtn" onclick="searchFunction()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="loc-list">
+                <div class="in">
+                    <input type="checkbox" name="India" id="in">
+                    <label for="in">INDIA</label>
+                </div>
+                <div class="us">
+                    <input type="checkbox" name="US" id="us">
+                    <label for="us">United State</label>
+                </div>
+                <!-- <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id=""> -->
+            </div>
+        </div>
+        <hr>
+        <div class="dis-news"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
